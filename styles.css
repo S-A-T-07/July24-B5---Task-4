@@ -1,0 +1,30 @@
+@keyframes moving-text {
+    0% {
+        transform: translateX(var(--start-x));
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-moving-text {
+    display: inline-block;
+    white-space: nowrap;
+    /* Prevent line breaks in text */
+    animation: moving-text var(--animation-duration) linear infinite;
+}
+
+.custom-start {
+    --start-x: 100%;
+    /* Start from outside the viewport */
+    --animation-duration: 25s;
+    /* Duration of one round */
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-moving-text {
+        animation: moving-text 20s linear infinite;
+        /* Fallback for users with reduced motion preferences */
+    }
+}
