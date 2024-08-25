@@ -1,8 +1,26 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+ .font-roboto {
+     font-family: 'Roboto', sans-serif;
+ }
+
+ /* Custom dark blue color */
+ .text-darkblue {
+     color: #003366;
+     /* You can adjust the hex code for a different shade of dark blue */
+ }
+
 html,
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 /* CAROUSEL */
+ .flex {
+     transition: transform 0.8s ease-in-out;
+     /* Adjust the duration and easing as needed */
+ }
+
  #slide1:checked~.flex {
      transform: translateX(0%);
  }
@@ -46,3 +64,48 @@ body {
         /* Fallback for users with reduced motion preferences */
     }
 }
+
+/* About us */
+ @keyframes slideInFromTop {
+     from {
+         transform: translateY(-100%);
+         opacity: 0;
+     }
+
+     to {
+         transform: translateY(0);
+         opacity: 1;
+     }
+ }
+
+ @keyframes fadeInWords {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ .slide-in {
+     animation: slideInFromTop 1s ease-out forwards;
+ }
+
+ .fade-in-words {
+     display: inline-block;
+     animation: fadeInWords 1s ease-out forwards;
+     opacity: 0;
+     animation-delay: var(--delay);
+ }
+
+ /* Add class to trigger animation when scrolled into view */
+ .animate-on-scroll {
+     opacity: 0;
+     /* Hidden initially */
+ }
+
+ .animate-on-scroll.visible {
+     opacity: 1;
+     animation: slideInFromTop 1s ease-out forwards;
+ }

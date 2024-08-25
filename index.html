@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- CSS -->
      <link rel="stylesheet" href="./styles.css">
+     <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     
     <!-- navbar -->
-    <nav class="bg-gray-900">
+    <nav id="home" class="bg-gray-900">
         <div class="mx-auto max-w-9xl px-2 sm:px-6 lg:px-8">
             <div class="relative flex h-16 items-center justify-between">
                 <!-- Logo on the left, moved more to the left using negative margin -->
@@ -29,214 +31,159 @@
 
                 <!-- Navigation links on the right -->
                 <div class="hidden sm:flex items-center justify-end space-x-4">
-                    <a href="#" class="rounded-md bg-gray-700 px-3 py-2 text-sm font-medium text-white" aria-current="page">New Releases</a>
-                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Brands</a>
-                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About Us</a>
-                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
+                    <a a href="#discounts" class="rounded-md bg-gray-700 px-2 py-2 text-sm font-medium text-white" aria-current="page">Discounts</a>
+                    <a href="#brands" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Brands</a>
+                    <a href="#aboutus" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About Us</a>
+                    <a href="#contactus" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
                 </div>
             </div>
         </div>
     </nav>
+    <!-- Home -->
+    <div id="main" class="w-full h-[500px] bg-cover bg-fixed pt-[200px]" style="background-image: url('https://thumbs.dreamstime.com/b/heap-old-assorted-shoes-stacked-shoeboxes-concept-worn-out-neglected-footwear-created-generative-ai-technology-281202548.jpg');">   
+    </div>
+    <br id="ideology">
+    <div class="flex items-center justify-center">
+        <img style="transform: scaleX(-1);" src="https://static.vecteezy.com/system/resources/previews/021/275/825/original/running-shoes-illustration-with-fire-shape-yellow-and-red-isolated-on-transparan-background-free-png.png" alt="Image" class="w-20 h-auto object-cover ml-4 mr-8">
+        <h1 class="text-center text-5xl font-extrabold text-blue-900 tracking-widest my-8" style="font-family: 'Playfair Display', serif; letter-spacing: 0.1em;"> | Foot_Locker | </h1>
+        <img src="https://static.vecteezy.com/system/resources/previews/021/275/825/original/running-shoes-illustration-with-fire-shape-yellow-and-red-isolated-on-transparan-background-free-png.png" alt="Image" class="w-20 h-auto object-cover ml-4">
+    </div>
 
+
+
+    <hr>
     <br><br>
     <!-- Carousel -->
-<div class="relative overflow-hidden h-[500px] w-screen">
-    <!-- Carousel Wrapper -->
-    <div class="relative flex transition-transform duration-500 ease-in-out w-full">
-        <!-- Slide Controls -->
-        <input type="radio" name="carousel" id="slide1" checked class="hidden" />
-        <input type="radio" name="carousel" id="slide2" class="hidden" />
-        <input type="radio" name="carousel" id="slide3" class="hidden" />
+    <div class="relative overflow-hidden h-[500px] w-screen">
+        <!-- Carousel Wrapper -->
+        <div class="relative flex transition-transform duration-500 ease-in-out w-full">
+            <!-- Slide Controls -->
+            <input type="radio" name="carousel" id="slide1" checked class="hidden" />
+            <input type="radio" name="carousel" id="slide2" class="hidden" />
+            <input type="radio" name="carousel" id="slide3" class="hidden" />
 
-        <div class="flex w-full">
-            <!-- Slide 1 -->
-            <div class="flex-shrink-0 w-screen h-[500px] flex items-center justify-center relative">
-                <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-10 p-4 w-1/5 ml-20">
-                    <p class="bg-white text-black italic font-bold p-4">In the world of fashion, shoes have always held a special place. They are not just a necessity but a powerful means of self-expression. Among the myriad options available, unique shoes stand out for their ability to captivate and intrigue.</p>
+            <div class="flex w-full">
+                <!-- Slide 1 -->
+                <div class="flex-shrink-0 w-screen h-[500px] flex items-center justify-center relative">
+                    <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-10 p-4 w-1/5 ml-20">
+                        <p class="bg-white text-black italic font-bold p-4">In the world of fashion, shoes have always held a special place. They are not just a necessity but a powerful means of self-expression. Among the myriad options available, unique shoes stand out for their ability to captivate and intrigue.</p>
 
+                    </div>
+                    <h2 class="text-center absolute bottom-7 left-30 text-3xl font-bold p-4 w-1/5">Unique shoes as a reflection of self</h2>
+                    <img src="https://img.freepik.com/free-photo/close-up-futuristic-sneakers_23-2151005668.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1715731200&semt=ais_user" alt="Slide 1" class="h-auto max-w-screen-sm mx-auto" />
+                    <div class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-10 p-4 w-1/5 mr-20">
+                        <p class="bg-white text-black italic font-bold p-4">One of the primary reasons people gravitate towards unique shoes is their ability to reflect individuality. In a world where personal identity is often expressed through fashion, unique shoes offer a canvas for creativity and self-expression.</p>
+                    </div>
                 </div>
-                <h2 class="text-center absolute bottom-7 left-30 text-3xl font-bold p-4 w-1/5">Unique shoes as a reflection of self</h2>
-                <img src="https://img.freepik.com/free-photo/close-up-futuristic-sneakers_23-2151005668.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1715731200&semt=ais_user" alt="Slide 1" class="h-auto max-w-screen-sm mx-auto" />
-                <div class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-10 p-4 w-1/5 mr-20">
-                    <p class="bg-white text-black italic font-bold p-4">One of the primary reasons people gravitate towards unique shoes is their ability to reflect individuality. In a world where personal identity is often expressed through fashion, unique shoes offer a canvas for creativity and self-expression.</p>
+
+                <!-- Slide 2 -->
+                <div class="flex-shrink-0 w-screen h-[500px] flex items-center justify-center relative">
+                    <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-10 p-4 w-1/5 ml-20">
+                        <p class="bg-white text-black italic font-bold p-4">Each pair tells a story, allowing wearers to showcase their personalities, preferences, and values. Whether it’s bold colors, unconventional shapes, or intricate patterns, unique shoes help people stand out and communicate who they are without saying a word.</p>
+
+                    </div>
+                    <h2 class="text-center absolute bottom-4 left-30 text-3xl font-bold p-4 text-white">Identity and Self-Expression</h2>
+                    <img src="https://img.freepik.com/free-photo/close-up-futuristic-sneakers_23-2151005655.jpg" alt="Slide 2" class="h-auto max-w-screen-sm mx-auto" />
+                    <div class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-10 p-4 w-1/5 mr-20">
+                        <p class="bg-white text-black italic font-bold p-4">The human desire to be unique is a powerful motivator. Psychologically, we are driven by a need to distinguish ourselves from others. This is known as the “need for uniqueness.”</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="flex-shrink-0 w-screen h-[500px] flex items-center justify-center relative">
+                    <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-10 p-4 w-1/5 ml-20">
+                        <p class="bg-white text-black italic font-bold p-4">These shoes often showcase artistic craftsmanship, from hand-painted designs to avant-garde structures.For many, wearing unique shoes is a way to support and celebrate the creativity of designers and artisans.</p>
+
+                    </div>
+                    <h2 class="text-center absolute bottom-7 left-30 text-3xl font-bold p-4 w-1/5 text-white">Creativity and Innovation</h2>
+                    <img src="https://img.freepik.com/premium-photo/new-sneaker-shoe-design-flying-running-shoes-advertising_742418-36111.jpg?w=360" alt="Slide 3" class="h-auto max-w-screen-sm mx-auto" />
+                    <div class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-10 p-4 w-1/5 mr-20">
+                        <p class="bg-white text-black italic font-bold p-4">Wearing unique shoes can boost self-esteem and confidence. The knowledge that one’s footwear is distinctive and admired by others can lead to positive self-perception.</p>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Slide 2 -->
-            <div class="flex-shrink-0 w-screen h-[500px] flex items-center justify-center relative">
-                <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-10 p-4 w-1/5 ml-20">
-                    <p class="bg-white text-black italic font-bold p-4">Each pair tells a story, allowing wearers to showcase their personalities, preferences, and values. Whether it’s bold colors, unconventional shapes, or intricate patterns, unique shoes help people stand out and communicate who they are without saying a word.</p>
-
-                </div>
-                <h2 class="text-center absolute bottom-4 left-30 text-3xl font-bold p-4 text-white">Identity and Self-Expression</h2>
-                <img src="https://img.freepik.com/free-photo/close-up-futuristic-sneakers_23-2151005655.jpg" alt="Slide 2" class="h-auto max-w-screen-sm mx-auto" />
-                <div class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-10 p-4 w-1/5 mr-20">
-                    <p class="bg-white text-black italic font-bold p-4">The human desire to be unique is a powerful motivator. Psychologically, we are driven by a need to distinguish ourselves from others. This is known as the “need for uniqueness.”</p>
-                </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="flex-shrink-0 w-screen h-[500px] flex items-center justify-center relative">
-                <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-10 p-4 w-1/5 ml-20">
-                    <p class="bg-white text-black italic font-bold p-4">These shoes often showcase artistic craftsmanship, from hand-painted designs to avant-garde structures.For many, wearing unique shoes is a way to support and celebrate the creativity of designers and artisans.</p>
-
-                </div>
-                <h2 class="text-center absolute bottom-7 left-30 text-3xl font-bold p-4 w-1/5 text-white">Creativity and Innovation</h2>
-                <img src="https://img.freepik.com/premium-photo/new-sneaker-shoe-design-flying-running-shoes-advertising_742418-36111.jpg?w=360" alt="Slide 3" class="h-auto max-w-screen-sm mx-auto" />
-                <div class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-10 p-4 w-1/5 mr-20">
-                    <p class="bg-white text-black italic font-bold p-4">Wearing unique shoes can boost self-esteem and confidence. The knowledge that one’s footwear is distinctive and admired by others can lead to positive self-perception.</p>
-                </div>
-            </div>
+        <!-- Navigation -->
+        <div class="absolute inset-x-0 bottom-4 flex justify-center space-x-2">
+            <label for="slide1" class="cursor-pointer w-3 h-3 bg-gray-500 rounded-full"></label>
+            <label for="slide2" class="cursor-pointer w-3 h-3 bg-gray-500 rounded-full"></label>
+            <label for="slide3" class="cursor-pointer w-3 h-3 bg-gray-500 rounded-full"></label>
         </div>
     </div>
-
-    <!-- Navigation -->
-    <div class="absolute inset-x-0 bottom-4 flex justify-center space-x-2">
-        <label for="slide1" class="cursor-pointer w-3 h-3 bg-gray-500 rounded-full"></label>
-        <label for="slide2" class="cursor-pointer w-3 h-3 bg-gray-500 rounded-full"></label>
-        <label for="slide3" class="cursor-pointer w-3 h-3 bg-gray-500 rounded-full"></label>
-    </div>
-</div>
-
-
-
-
-    <!-- Registration -->
-
-    <!-- modal -->
-    <!-- <div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
-
-        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
-            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-                <div class="sm:flex sm:items-start">
-                    <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
-                    <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
-                    </svg>
-                    </div>
-                    <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                    <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Deactivate account</h3>
-                    <div class="mt-2">
-                        <p class="text-sm text-gray-500">Are you sure you want to deactivate your account? All of your data will be permanently removed. This action cannot be undone.</p>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                <button type="button" class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto">Deactivate</button>
-                <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Cancel</button>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- Gallery -->
-     <!-- <div class="relative">
-        <button type="button" class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
-            <span>Solutions</span>
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-            </svg>
-        </button>
-        <div class="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
-            <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
-            <div class="p-4">
-                <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                    <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
-                    </svg>
-                </div>
-                <div>
-                    <a href="#" class="font-semibold text-gray-900">
-                    Analytics
-                    <span class="absolute inset-0"></span>
-                    </a>
-                    <p class="mt-1 text-gray-600">Get a better understanding of your traffic</p>
-                </div>
-                </div>
-                <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                    <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
-                    </svg>
-                </div>
-                <div>
-                    <a href="#" class="font-semibold text-gray-900">
-                    Engagement
-                    <span class="absolute inset-0"></span>
-                    </a>
-                    <p class="mt-1 text-gray-600">Speak directly to your customers</p>
-                </div>
-                </div>
-                <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                    <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
-                    </svg>
-                </div>
-                <div>
-                    <a href="#" class="font-semibold text-gray-900">
-                    Security
-                    <span class="absolute inset-0"></span>
-                    </a>
-                    <p class="mt-1 text-gray-600">Your customers&#039; data will be safe and secure</p>
-                </div>
-                </div>
-                <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                    <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
-                    </svg>
-                </div>
-                <div>
-                    <a href="#" class="font-semibold text-gray-900">
-                    Integrations
-                    <span class="absolute inset-0"></span>
-                    </a>
-                    <p class="mt-1 text-gray-600">Connect with third-party tools</p>
-                </div>
-                </div>
-                <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                    <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-                    </svg>
-                </div>
-                <div>
-                    <a href="#" class="font-semibold text-gray-900">
-                    Automations
-                    <span class="absolute inset-0"></span>
-                    </a>
-                    <p class="mt-1 text-gray-600">Build strategic funnels that will convert</p>
-                </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                <a href="#" class="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M2 10a8 8 0 1116 0 8 8 0 01-16 0zm6.39-2.908a.75.75 0 01.766.027l3.5 2.25a.75.75 0 010 1.262l-3.5 2.25A.75.75 0 018 12.25v-4.5a.75.75 0 01.39-.658z" clip-rule="evenodd" />
-                </svg>
-                Watch demo
-                </a>
-                <a href="#" class="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" />
-                </svg>
-                Contact sales
-                </a>
-            </div>
-            </div>
-        </div>
-    </div> -->
     <br><br>
+    <hr>
+    <br><br>
+    <!-- Our Brands -->
+
+    <div id="brands" class="h-screen flex flex-col items-center justify-center p-4">
+        <h1 class="text-4xl font-extrabold text-teal-600 mb-8">OUR BRANDS</h1>
+        <br>
+        
+        <div class="flex flex-wrap justify-center gap-9">
+            <!-- Clickable logos of shoe brands -->
+            <a href="https://www.adidas.co.in/" target="_blank" rel="noopener noreferrer">
+                <img src="./Images/Adidas.png" alt="Adidas" class="w-24 h-auto object-contain">
+            </a>
+            <a href="https://www.asianfootwears.com/?srsltid=AfmBOopiFu_Y9trvQgONDUD8nHvxueMXnZwtW7X0_SV07gHZFucIlzXs" target="_blank" rel="noopener noreferrer">
+                <img src="./Images/Asian.png" alt="ASIAN" class="w-24 h-auto object-contain">
+            </a>
+            <a href="https://bersache.com/?srsltid=AfmBOoqjtZzh2oCGM42zeubteHvb2j36y7LG4Rjt4EITKdTJVtMKkqOR" target="_blank" rel="noopener noreferrer">
+                <img src="./Images/Bersache.png" alt="Bersache" class="w-24 h-auto object-contain">
+            </a>
+            </a>
+            <a href="https://www.nike.com/in/w/shoes-y7ok" target="_blank" rel="noopener noreferrer">
+                <img src="./Images/Nike.png" alt="Nike" class="w-24 h-auto object-contain">
+            </a>
+            <a href="https://reebok.abfrl.in/" target="_blank" rel="noopener noreferrer">
+                <img src="./Images/Reebok.png" alt="Reebok" class="w-24 h-auto object-contain">
+            </a>
+            <a href="https://fila.co.in/" target="_blank" rel="noopener noreferrer">
+                <img src="./Images/Fila.png" alt="Fila" class="w-24 h-auto object-contain">
+            </a>
+        </div>
+    </div>
+    
+    <!-- About us -->
+    <section id="aboutus" class="min-h-screen flex items-center justify-center p-4 bg-gray-200 ">
+        <div class="max-w-6xl mx-auto relative overflow-hidden flex items-center space-x-4">
+            <div class="slide-in">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/275/825/original/running-shoes-illustration-with-fire-shape-yellow-and-red-isolated-on-transparan-background-free-png.png" alt="Image" class="w-80 h-auto object-cover">
+            </div>
+            <div class="w-full">
+                <h1 class="text-4xl font-extrabold text-teal-600">ABOUT US</h1>
+
+                <br>
+
+                <p class="text-lg leading-relaxed font-roboto italic font-extrabold text-darkblue">
+                    <!-- Splitting text into span elements for word-by-word animation -->
+                    <span class="fade-in-words" style="--delay: 0s;">'' We</span>
+                    <span class="fade-in-words" style="--delay: 0.1s;">believe</span>
+                    <span class="fade-in-words" style="--delay: 0.2s;">everyone</span>
+                    <span class="fade-in-words" style="--delay: 0.3s;">has</span>
+                    <span class="fade-in-words" style="--delay: 0.4s;">their</span>
+                    <span class="fade-in-words" style="--delay: 0.5s;">own,</span>
+                    <span class="fade-in-words" style="--delay: 0.6s;">unique</span>
+                    <span class="fade-in-words" style="--delay: 0.7s;">sense</span>
+                    <span class="fade-in-words" style="--delay: 0.8s;">of</span>
+                    <span class="fade-in-words" style="--delay: 0.9s;">style.'</span>
+                    <!-- Continue this pattern for the rest of the text -->
+                </p>
+                <br>
+                <p class="text-lg leading-relaxed font-serif">
+                    Every pair of shoes is an invitation to experience a different side of you, from your very first steps to legendary leaps in life.
+                    After more than 30 years in business and having grown to over 100 stores across Canada, we're excited to share our updated brand, The Shoe Co, complete with new logo, signage, and visual concept online and in-store.
+                    We'll continue to offer the names you know and love plus exclusive brands and styles, and with the same commitment to being your destination for the pair that's perfectly you.
+                </p>
+            </div>
+        </div>
+    </section>
+     
+    <br><br>
+    <!-- Discount -->
+
     <!-- Discount banner -->
-    <div class="relative isolate flex items-center justify-between h-16 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5">
+    <div id="discounts" class="relative isolate flex items-center justify-between h-16 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5">
         <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
             <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
         </div>
@@ -276,40 +223,81 @@
             </p>
         </div>
     </div>
+    <!-- Discount Cards -->
+     <br>
+    <div class="flex justify-center space-x-4 p-4">
+        <!-- Card 1 -->
+        <a href="https://www.amazon.in/ASIAN-Wonder-13-Sports-Running-Shoes/dp/B01N54ZM9W/ref=sr_1_5?sr=8-5" target="_blank" class="block max-w-xs bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-shadow transition-transform duration-300">
+            <img class="w-full h-48 object-cover" src="https://m.media-amazon.com/images/I/61utX8kBDlL._SY695_.jpg" alt="Card Image 1">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2 text-center font-bold">ASIAN - Men's Wonder-13 Sports Running Shoes</h2>
+                <p class="text-gray-700 text-2xl mb-4 text-center font-bold italic" style="color: darkblue;">
+                43% off
+                </p>
+            </div>
+        </a>
 
+
+
+        <!-- Card 2 -->
+        <a href="https://www.amazon.in/ASIAN-Everest-01-Trekking-Walking-Outsole/dp/B0BSRS4RHG/ref=sr_1_13?sr=8-13" target="_blank" class="block max-w-xs bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-shadow transition-transform duration-300">
+            <img class="w-full h-48 object-cover" src="https://m.media-amazon.com/images/I/71g9qoOqd8L._SY695_.jpg" alt="Card Image 1">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2 text-center font-bold">ASIAN Men's Everest-01 Sports </h2>
+                <p class="text-gray-700 text-2xl mb-4 text-center font-bold italic" style="color: darkblue;">
+                50% off
+                </p>
+            </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="https://www.amazon.in/Bersache-Premium-Trending-Stylish-Running/dp/B09ZD6D19Y/ref=sr_1_30?sr=8-30" target="_blank" class="block max-w-xs bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-shadow transition-transform duration-300">
+            <img class="w-full h-48 object-cover" src="https://m.media-amazon.com/images/I/61BYQOF1nOL._SY675_.jpg" alt="Card Image 1">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2 text-center font-bold">Bersache Sports Shoes for Men</h2>
+                <p class="text-gray-700 text-2xl mb-4 text-center font-bold italic" style="color: darkblue;">
+                79% off
+                </p>
+            </div>
+        </a>
+    </div>
 
     <br><br>
     <!-- Footer -->
+
     <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-            <div class="text-center md:text-left">
-                <h3 class="text-xl font-bold">Company Name</h3>
-                <p class="text-sm mt-2">© 2024 Company Name. All rights reserved.</p>
-            </div>
             <div class="mt-4 md:mt-0">
-                <ul class="flex justify-center md:justify-end space-x-4">
-                    <li><a href="#" class="hover:underline">Home</a></li>
-                    <li><a href="#" class="hover:underline">About</a></li>
-                    <li><a href="#" class="hover:underline">Services</a></li>
-                    <li><a href="#" class="hover:underline">Contact</a></li>
+                <ul class="flex justify-center space-x-4">
+                    <li><a href="#home" class="hover:underline">Home</a></li>
+                    <span>|</span>
+                    <li><a href="#aboutus" id="aboutus" class="hover:underline">About</a></li>
+                    <span>|</span>
+                    <li><a href="#ideology" class="hover:underline">Ideology</a></li>
+                    <span>|</span>
+                    <li><a href="#contactus" class="hover:underline">Contact</a></li>
                 </ul>
             </div>
-            <div class="mt-4 md:mt-0">
-                <div class="flex justify-center md:justify-end space-x-4">
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <!-- FontAwesome icon for example -->
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm-1-12h2v6h-2zm0 8h2v2h-2z"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <!-- Another icon -->
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm-1-12h2v6h-2zm0 8h2v2h-2z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+        </div>
+        
+    </div>
+</div>
+<br>
+<div class="relative">
+    <div class="flex justify-center">
+        <p class="text-sm mb-0">© 2024 FreshFeet. All rights reserved.</p>
+    </div>
+</div>
+
+<br>
+<!-- Contact us -->
+<div id="contactus" class="mt-4 md:mt-0">
+    <div class="flex justify-center items-center space-x-4 mr-7">
+        <div class="flex space-x-4">
+            <a href="https://www.linkedin.com/in/soumya-annie-thomas-099255214" target="_blank" class="text-white hover:text-gray-300"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/SoumyaAnnieThomas/" target="_blank" class="text-white hover:text-gray-300"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/home?lang=en" target="_blank" class="text-white hover:text-gray-300"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank" class="text-white hover:text-gray-300"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/s__a__t__07" target="_blank" class="text-white hover:text-gray-300"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
 
